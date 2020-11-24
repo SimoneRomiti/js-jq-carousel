@@ -128,6 +128,7 @@ $(document).ready(
       }
     );
 
+
     nav = $(".nav").html("<i class='fas fa-circle active first'></i><i class='fas fa-circle'></i><i class='fas fa-circle'></i><i class='fas fa-circle last'></i>"
     );
 
@@ -138,7 +139,6 @@ $(document).ready(
         circleClick(theCircle);
       }
     );
-
 
 
   }
