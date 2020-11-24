@@ -16,16 +16,20 @@ $(document).ready(
       function(){
 
         var activeImage = $('.images img.active');
+        var activeCircle = $('.nav i.active');
 
         activeImage.removeClass('active');
+        activeCircle.removeClass("active");
+
 
         if(activeImage.hasClass("last")){
           var nextImage = $('.images img.first');
           nextImage.addClass("active");
-          console.log("next-last", nextImage);
+          var nextCircle = $('.nav i.first');
+          nextCircle.addClass("active");
         } else{
           var nextImage = activeImage.next().addClass("active");
-          console.log("next", nextImage);
+          var nextCircle = activeCircle.next().addClass("active");
         }
 
       }
